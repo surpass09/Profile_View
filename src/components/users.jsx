@@ -2,9 +2,11 @@ import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import '../CSS/users.css';
 
+//Rest API keys
 const API_URL = 'https://jsonplaceholder.typicode.com/users';
 const API_URLv2 = 'https://jsonplaceholder.typicode.com/posts';
 
+// function for fetching actions of users
 async function getAct() {
     const res = await fetch(API_URLv2);
     if (!res.ok) {
@@ -17,7 +19,7 @@ async function getAct() {
         body: user.body
     }));
 }
-
+//getting the users info
 async function getUsers() {
     const res = await fetch(API_URL);
     if (!res.ok) {
@@ -32,7 +34,7 @@ async function getUsers() {
         phone: person.phone
     }));
 }
-
+// capture the data of the users
 function DisplayUsers() {
     const { data: users, status: userStatus } = useQuery({
         queryKey: ['userData'],
@@ -49,7 +51,7 @@ function DisplayUsers() {
             console.error('Error fetching data:', error);
         }
     });
-
+       //error status
     if (userStatus === 'loading' || actStatus === 'loading') {
         return <div>Loading...</div>;
     }
