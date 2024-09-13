@@ -1,0 +1,106 @@
+/* General styles for containers */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 15px; /* Rounded corners for a smooth look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-bottom: 30px; /* Spacing between profiles */
+    max-width: 1200px; /* Limit the width for readability */
+    margin: 0 auto; /* Center the container */
+}
+
+.profile-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px; /* Space between profile and activities */
+}
+
+.profile-details {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f4f8; /* Soft background for profile details */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.activities-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f4f8; /* Soft background for activities */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Profile Heading and User Name */
+.profile-heading {
+    margin: 0;
+    font-size: 1.6em; /* Larger font size for headings */
+    color: #333; /* Darker text for better readability */
+    font-weight: 600; /* Slightly bolder text */
+}
+
+.user-name {
+    margin-left: 10px;
+    font-weight: 700;
+    color: #007bff; /* Highlighted user name color */
+}
+
+/* Activity Item Styles */
+.activity-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffff; /* White background for activity items */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for separation */
+}
+
+.activity-item h4 {
+    margin: 0 0 10px;
+    font-size: 1.3em;
+    color: #007bff; /* Matching color for activity titles */
+}
+
+.activity-item p {
+    margin: 0;
+    font-size: 1em;
+    color: #555; /* Subtle text color for the body */
+}
+
+/* Table styles - not used in current layout but kept for reference */
+.Table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.Table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Table th, .Table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.Table th {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.Table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.Table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
