@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Project can be viewed here -> https://surpass09.github.io/Profile_Vie
+Project can be viewed here -> https://surpass09.github.io/Profile_View
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
